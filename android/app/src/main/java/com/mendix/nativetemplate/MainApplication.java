@@ -21,6 +21,7 @@ import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.rnfingerprint.FingerprintAuthPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.zmxv.RNSound.RNSoundPackage;
+import com.eddieowens.RNBoundaryPackage;
 
 import org.pgsqlite.SQLitePluginPackage;
 import org.reactnative.camera.RNCameraPackage;
@@ -41,6 +42,7 @@ public class MainApplication extends MendixReactApplication {
   public List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new RNBoundaryPackage(),
             new DarkModePackage(),
             new CodePush(getCodePushKey(), getApplicationContext(), BuildConfig.DEBUG),
             new RNGestureHandlerPackage(),

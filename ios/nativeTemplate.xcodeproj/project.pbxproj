@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -33,6 +32,7 @@
 		EB9F30DA234BC20400018098 /* libMendix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9F30D1234BC20400018098 /* libMendix.a */; };
 		EBC808FE22DF2EF4007E5F3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC808FD22DF2EF4007E5F3D /* AppDelegate.swift */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
+		745C147F1DF043178415ABD9 /* libRNBoundary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C79AF0D012C4E0386C1A704 /* libRNBoundary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +68,8 @@
 		EBC80A6022DF4205007E5F3D /* config.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.debug.xcconfig; sourceTree = "<group>"; };
 		EBC80A6122DF42DF007E5F3D /* config.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.release.xcconfig; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6D02D5AA0D824C9A88015B10 /* RNBoundary.xcodeproj */ = {isa = PBXFileReference; name = "RNBoundary.xcodeproj"; path = "../node_modules/react-native-boundary/ios/RNBoundary.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		1C79AF0D012C4E0386C1A704 /* libRNBoundary.a */ = {isa = PBXFileReference; name = "libRNBoundary.a"; path = "libRNBoundary.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				EB9F30DA234BC20400018098 /* libMendix.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				50E219F2C10F3245B5974EDA /* libPods-nativeTemplate.a in Frameworks */,
+				745C147F1DF043178415ABD9 /* libRNBoundary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +118,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A1EBC69BD21646E490B9229B /* Resources */,
 				ADF0073EA1EDDA0933D2FFE1 /* Pods */,
+				F12E274B6F724C85817BA0CF /* Libraries */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -196,6 +200,15 @@
 			);
 			path = Config;
 			sourceTree = "<group>";
+		};
+		F12E274B6F724C85817BA0CF /* Libraries */ = {
+			isa = "PBXGroup";
+			children = (
+				6D02D5AA0D824C9A88015B10 /* RNBoundary.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -435,6 +448,7 @@
 					"$(SRCROOT)/../node_modules/react-native-view-shot/ios",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)\..\node_modules\react-native-boundary\ios",
 				);
 				INFOPLIST_FILE = nativeTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -444,6 +458,7 @@
 					"${SRCROOT}/MendixNative",
 					"$(PROJECT_DIR)/MendixNative",
 					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/nativeTemplate\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -507,6 +522,7 @@
 					"$(SRCROOT)/../node_modules/react-native-view-shot/ios",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)\..\node_modules\react-native-boundary\ios",
 				);
 				INFOPLIST_FILE = nativeTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -516,6 +532,7 @@
 					"${SRCROOT}/MendixNative",
 					"$(PROJECT_DIR)/MendixNative",
 					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/nativeTemplate\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
