@@ -28,7 +28,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mendix.NativeGeofencingFinal22 --runtime-url http://192.168.31.130:8080"
+        applicationId "com.mendix.NativeGeofencingFinal22 --runtime-url http://192.168.31.130:8080" --runtime-url http://192.168.31.130:8080"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         missingDimensionStrategy "react-native-camera", "general"
