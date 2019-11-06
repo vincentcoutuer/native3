@@ -465,7 +465,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mendix.NativeGeofencingFinal22 --runtime-url http://192.168.31.130:8080;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.myapp;
 				PRODUCT_NAME = nativeTemplate;
 				SWIFT_INCLUDE_PATHS = "$(inherited) ${SRCROOT}/MendixNative";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -539,7 +539,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mendix.NativeGeofencingFinal22 --runtime-url http://192.168.31.130:8080;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.myapp;
 				PRODUCT_NAME = nativeTemplate;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "$(inherited) ${PROJECT_DIR} ${SRCROOT}/MendixNative";
